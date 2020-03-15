@@ -1,0 +1,12 @@
+@import "styles/constants.scss";
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto 0;
+  @include respond-below(lg) {
+    max-width: 100%;
+  }
+  @include respond-below(sm) {
+    margin: 0 auto 0;
+  }
+}

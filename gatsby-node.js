@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin")
 
 // You can delete this file if you're not using it
 // Implement the Gatsby API “onCreatePage”. This is
@@ -18,4 +19,12 @@ exports.onCreatePage = async ({ page, actions }) => {
     // Update the page.
     createPage(page)
   }
+}
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      plugins: [new TsconfigPathsPlugin()],
+    },
+  })
 }

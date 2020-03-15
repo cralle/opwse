@@ -1,0 +1,99 @@
+@import "styles/constants.scss";
+
+.wrapper {
+  font-size: 1.7rem;
+  line-height: 1.3em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: initial;
+  margin-bottom: 4rem;
+
+  .info {
+    justify-self: left;
+    max-width: 60rem;
+    @include respond-below(md) {
+      max-width: 32rem;
+    }
+    @include respond-below(sm) {
+      max-width: 100%;
+    }
+  }
+  @include use-padding;
+
+  @include respond-below(lg) {
+    justify-content: space-around;
+    flex-direction: column;
+    left: 0;
+    right: auto;
+  }
+  @include respond-below(sm) {
+    font-size: 1.5rem;
+  }
+  @include respond-below(xs) {
+    font-size: 1.35rem;
+  }
+
+  @include respond-above(lg) {
+    text-align: left;
+  }
+
+  .highlight {
+    color: $cHighlight;
+  }
+}
+
+.sub-info {
+  color: $gray500;
+  font-size: 1.3rem;
+  a {
+    color: $cPrimary;
+  }
+}
+
+.profile {
+  display: block;
+  position: relative;
+  width: 400px;
+  border-radius: 1%;
+  justify-self: right;
+
+  @include respond-below(md) {
+    margin: 2rem auto 2rem;
+    width: 400px;
+  }
+  @include respond-below(sm) {
+    margin: 0rem auto 2rem;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+    @include respond-below(sm) {
+      padding-top: 100%;
+    }
+  }
+
+  img {
+    opacity: 100%;
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 99%;
+    height: 99%;
+    top: -100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    border-radius: 1%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}

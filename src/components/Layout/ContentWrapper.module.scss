@@ -1,0 +1,22 @@
+@import "styles/constants.scss";
+
+.content-wrapper {
+  max-width: 68rem;
+  width: calc(100% - 9.25rem * 2);
+  margin: 4rem auto 4rem;
+  @include respond-below(lg) {
+    margin: 4rem auto 3rem;
+    width: calc(100% - 11rem * 2);
+  }
+
+  @include respond-below(md) {
+    width: 100%;
+    margin: 2rem auto 0;
+    padding: 0 3rem 6rem;
+  }
+
+  @include respond-below(sm) {
+    margin: 1rem auto 0;
+    padding: 0 2rem 6rem;
+  }
+}

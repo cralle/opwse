@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Order Management",
+    "category": ["design", "code"],
+    "tech": [
+      "C#",
+      ".NET Core",
+      "K8s",
+      "Docker",
+      "Azure DevOps",
+      "OIDC",
+      "Identity Server 4",
+      "Azure ServiceBus",
+      "Hybrid Cloud"
+    ],
+    "client": "INTERSPORT",
+    "year": "2020",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Parcel Service",
+    "category": ["design", "code"],
+    "tech": [
+      "C#",
+      ".NET Core",
+      "ReactJS",
+      "TypeScript",
+      "Redux",
+      "K8s",
+      "Docker",
+      "Azure DevOps",
+      "OIDC",
+      "Identity Server 4",
+      "Azure ServiceBus",
+      "Redis",
+      "Hybrid Cloud",
+      "MSSQL"
+    ],
+    "client": "INTERSPORT",
+    "year": "2019",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Central Logging",
+    "category": ["design", "code"],
+    "tech": ["Hybrid Cloud", "ELK", "Filebeat", "Azure Eventhub", "Serilog"],
+    "client": "INTERSPORT",
+    "year": "2019",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Azure AKS",
+    "category": ["design", "code"],
+    "tech": ["IAC", "Azure DevOps", "Azure AKS", "App specific"],
+    "client": "INTERSPORT",
+    "year": "2019",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Live sale dashboard",
+    "category": ["design", "code"],
+    "tech": ["React", "Javascript", "node.js", "WEBAPI", "Chart.js"],
+    "client": "INTERSPORT",
+    "year": "2016",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Ski rental for Customers",
+    "category": ["design", "code"],
+    "tech": ["PHP", "Slim framework", "AngularJS", "Custom Responsive CSS"],
+    "client": "INTERSPORT",
+    "year": "2014",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Ski rental for Stores",
+    "category": ["design", "code"],
+    "tech": ["PHP", "Slim framework", "AngularJS", "Bootstrap CSS"],
+    "client": "INTERSPORT",
+    "year": "2013",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Customer Order for Stores",
+    "category": ["design", "code"],
+    "tech": [
+      "PHP",
+      "Custom REST framework",
+      "Custom RBAC",
+      "MySQL",
+      "JQuery",
+      "Bootstrap"
+    ],
+    "client": "INTERSPORT",
+    "year": "2008",
+    "featured": false,
+    "url": ""
+  },
+  {
+    "title": "Quiz system for School",
+    "category": ["design", "code"],
+    "tech": ["PHP", "HTML", "CSS", "MySQL"],
+    "client": "School work /w classmate",
+    "year": "2002",
+    "featured": false,
+    "url": ""
+  }
+]

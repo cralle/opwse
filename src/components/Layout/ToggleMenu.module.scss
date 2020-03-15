@@ -1,0 +1,63 @@
+@import "styles/constants.scss";
+
+.wrapper {
+  display: none;
+  height: 20px;
+  width: 1.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  backface-visibility: hidden;
+  transition: transform 0.45s cubic-bezier(0.45, 0, 0.07, 1);
+  will-change: transform;
+  span {
+    display: inline-block;
+    height: 2px;
+    background: #fff;
+    transition: transform 0.45s cubic-bezier(0.45, 0, 0.07, 1);
+    will-change: transform;
+  }
+
+  &.open {
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(90deg);
+
+    span {
+      &:nth-child(1) {
+        width: 84%;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        width: 0%;
+      }
+
+      &:nth-child(3) {
+        width: 84%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  &.closed {
+    transform: rotate(0);
+
+    span {
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        width: 90%;
+      }
+
+      &:nth-child(3) {
+        width: 80%;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    display: flex;
+  }
+}

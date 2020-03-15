@@ -1,0 +1,55 @@
+@import "styles/constants.scss";
+
+html,
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  @include respond-above(lg) {
+    font-size: 14px;
+  }
+}
+
+body {
+  @include font-sans-serif;
+  background: $cBackground;
+  // background: radial-gradient(at top left, #111, #000);
+  color: $cPrimary;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: inherit;
+}
+
+a {
+  color: $cLink;
+  text-decoration: none;
+  transition: color ease-in 0.2s;
+
+  &:hover {
+    color: $cLinkHover;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.4em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+::selection {
+  color: $cHighlight;
+  background: transparent;
+}
