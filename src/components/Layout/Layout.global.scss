@@ -13,6 +13,7 @@ body {
 body {
   @include font-sans-serif;
   background: $cBackground;
+  padding-bottom: 1px;
   // background: radial-gradient(at top left, #111, #000);
   color: $cPrimary;
   backface-visibility: hidden;
