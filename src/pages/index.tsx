@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { RouteComponentProps } from "@reach/router"
-import { Layout } from "components/Layout"
+import { ContentWrapper, Layout } from "components/Layout"
 import { CycleUsps } from "components/CycleUsps"
 import SEO from "components/seo"
 

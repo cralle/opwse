@@ -2,13 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import { RouteComponentProps } from "@reach/router"
 
-import { Layout } from "components/Layout"
+import { Layout, ContentWrapper } from "components/Layout"
 import SEO from "components/seo"
 import { CycleUsps } from "components/CycleUsps"
 import styles from "./index.module.scss"
 
 const usps = [
   "tech-savvy leader",
+  "solution architect",
   "system architect",
   "developer",
   "retail specialist",
@@ -44,6 +45,7 @@ const ProfilePage: React.FC<RouteComponentProps> = ({ location }) => (
       <div>
         <div>Roles timeline</div>
         <div className={styles.subInfo}>
+          <div>CTO</div>
           <div>Head of IT Development</div>
           <div>IT Manager</div>
           <div>Interim IT Manager</div>
@@ -57,7 +59,7 @@ const ProfilePage: React.FC<RouteComponentProps> = ({ location }) => (
 )
 
 const Wrapper: React.FC = ({ children }) => (
-  <section className={styles.wrapper}>{children}</section>
+  <div className={styles.wrapper}>{children}</div>
 )
 
 export default ProfilePage
