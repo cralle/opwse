@@ -1,0 +1,16 @@
+{
+  "tech": [
+    {
+      "tech": "C#"
+    },
+    {
+      "tech": ".NET Core"
+    },
+    {
+      "tech": "K8s"
+    },
+    {
+      "tech": "Docker"
+    }
+  ]
+}
