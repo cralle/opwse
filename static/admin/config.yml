@@ -6,6 +6,73 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  - name: projects
+    label: Projects
+    folder: site/content/projects
+    create: true
+    fields: 
+      - { label: Title, name: title, widget: string }
+      - { label: Client, name: client, widget: string }
+      - { label: Year, name: year, widget: string }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - label: Category
+        name: category
+        widget: select
+        multiple: true
+        options: ["code", "design"]
+      - label: Tech
+        name: tech
+        widget: list
+  - name: pages
+    label: Pages
+    editor:
+      preview: false
+    delete: false
+    preview_path: team
+    files:
+      - name: projects
+        label: projects
+        file: src/data/projectsx.json
+        fields:
+          - label: Projects
+            name: projects
+            summary: '{{fields.title}}: {{fields.year}}'
+            widget: list
+            fields: 
+              - { label: Title, name: title, widget: string }
+              - { label: Client, name: client, widget: string }
+              - { label: Year, name: year, widget: string }
+              - { label: Featured, name: featured, widget: boolean, default: false }
+              - label: Category
+                name: category
+                widget: select
+                multiple: true
+                options: ["code", "design"]
+              - label: Tech
+                name: tech
+                widget: relation
+                collection: settings
+                file: tech
+                multiple: true
+                search_fields: ['tech.*.value']
+                display_fields: ['tech.*.value']
+                value_field: 'tech.*.value'
+  - name: settings
+    label: Settings
+    editor:
+      preview: false
+    files:
+      - name: tech
+        label: tech
+        file: src/data/tech.json
+        fields:
+          - name: tech
+            label: Tech
+            widget: list
+            fields:
+              - { name: type, widget: select, options: ['language', 'framework', 'util', 'devops', 'business-tool'] }
+              - { name: value, label: Tech, widget: string }
+
   - name: blog
     label: Blog
     folder: blog

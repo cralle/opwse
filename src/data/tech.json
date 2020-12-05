@@ -1,16 +1,20 @@
 {
   "tech": [
     {
-      "tech": "C#"
+      "type": "language",
+      "value": "C#"
     },
     {
-      "tech": ".NET Core"
+      "type": "framework",
+      "value": ".NET Core"
     },
     {
-      "tech": "K8s"
+      "type": "devops",
+      "value": "K8s"
     },
     {
-      "tech": "Docker"
+      "type": "devops",
+      "value": "Docker"
     }
   ]
 }
