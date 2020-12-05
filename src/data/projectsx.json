@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "featured": false,
+      "tech": [
+        "C#",
+        ".NET Core"
+      ],
+      "title": "Order Management",
+      "client": "INTERSPORT",
+      "year": "2020",
+      "category": [
+        "code",
+        "design"
+      ]
+    }
+  ]
+}
