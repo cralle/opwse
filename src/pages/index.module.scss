@@ -11,7 +11,7 @@
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: initial;
-
+  
   .info {
     justify-self: left;
     max-width: 60rem;
@@ -23,16 +23,19 @@
     }
   }
   @include use-padding;
-
+  
   @include respond-below(lg) {
     justify-content: space-around;
     flex-direction: column;
     left: 0;
     right: auto;
+    padding-left: 6rem;
+    padding-bottom: 12rem;
   }
   @include respond-below(sm) {
     font-size: 1.5rem;
     padding-bottom: map-get($spaces, "p600");
+    padding-left: 2rem;
   }
   @include respond-below(xs) {
     font-size: 1.35rem;
@@ -61,7 +64,11 @@
   width: 400px;
   border-radius: 1%;
   justify-self: right;
-
+  
+  @include respond-below(lg) {
+    margin: 0rem auto 2rem;
+  }
+  
   @include respond-below(md) {
     margin: 2rem auto 2rem;
     width: 400px;

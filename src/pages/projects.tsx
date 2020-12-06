@@ -7,17 +7,17 @@ import SEO from "../components/seo"
 import { ProjectsContent } from "components/Projects"
 
 const projectsQuery = graphql`
-  query ProjectsQuery {
-    projects: allProjectsJson {
-      edges {
-        project: node {
-          title
-          category
-          client
+  query ProjectItemsQuery {
+    folder: allProjectsJson {
+      files: nodes {
+        projects {
           tech
-          year
+          title
           url
+          year
           featured
+          client
+          category
         }
       }
     }

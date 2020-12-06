@@ -1,21 +1,24 @@
 import React from "react"
-import idx from "idx"
 import { ProjectList } from "./ProjectList"
 import { ContentWrapper } from "components/Layout"
 import { Project } from "./ProjectTypes"
 
 interface Props {
   data: {
-    projects: {
-      edges: Array<{ project: Project }>
+    folder: {
+      files: Array<ProjectFile>
     }
   }
 }
 
+interface ProjectFile {
+  projects: Array<Project>
+}
+
 export const ProjectsContent: React.FC<Props> = ({ data }) => {
   const getData = () => {
-    const exp = idx(data, _ => _.projects.edges)
-    return exp?.map(x => x.project) as Array<Project>
+    const projects = [].concat.apply([], data.folder.files.map(x => x.projects))
+    return projects
   }
 
   return (

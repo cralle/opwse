@@ -32,7 +32,7 @@ collections:
     files:
       - name: projects
         label: projects
-        file: src/data/projectsx.json
+        file: src/data/projects/projects.json
         fields:
           - label: Projects
             name: projects
@@ -64,13 +64,13 @@ collections:
     files:
       - name: tech
         label: tech
-        file: src/data/tech.json
+        file: src/data/settings/tech.json
         fields:
           - name: tech
             label: Tech
             widget: list
             fields:
-              - { name: type, widget: select, options: ['language', 'framework', 'util', 'devops', 'business-tool'] }
+              - { name: type, widget: select, options: ['language', 'framework', 'util', 'devops', 'tool'] }
               - { name: value, label: Tech, widget: string }
 
   - name: blog

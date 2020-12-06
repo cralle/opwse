@@ -26,6 +26,7 @@ const ProfilePage: React.FC<RouteComponentProps> = ({ location }) => (
         <div>
           I&apos;m <span className={styles.highlight}>Patrik Wilhelmsson</span>.
           I love making life more efficient through software engineering.
+          The focus on the experience of both the employees and the customers is crucial to succeed.
         </div>
         <p className={styles.subInfo}>
           My core <span className={styles.highlight}>strengths</span> include

@@ -9,6 +9,7 @@ import styles from "./index.module.scss"
 
 const usps = [
   "tech-savvy leader",
+  "solution architect",
   "system architect",
   "developer",
   "retail specialist",
@@ -16,15 +17,17 @@ const usps = [
 
 const IndexPage: React.FC<RouteComponentProps> = ({ location }) => (
   <Layout location={location}>
-    <SEO title="Hi" />
+    <SEO title="Patrik Wilhelmsson" />
     <Wrapper>
       <div className={styles.profile}>
         <img src="/img/patrik-wilhelmsson-2.jpg" />
       </div>
       <div className={styles.info}>
         <div>
-          I&apos;m <span className={styles.highlight}>Patrik Wilhelmsson</span>.
-          I love making life more efficient through software engineering.
+          I&apos;m{" "}
+          <span className={styles.highlight}>Patrik Wilhelmsson</span>. I love
+          making life more efficient through software engineering.
+          The focus on the experience of both the employees and the customers is crucial to succeed.
         </div>
         <p>
           A <CycleUsps usps={usps} /> working <br />
