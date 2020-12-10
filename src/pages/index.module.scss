@@ -11,7 +11,7 @@
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: initial;
-  
+
   .info {
     justify-self: left;
     max-width: 60rem;
@@ -23,7 +23,7 @@
     }
   }
   @include use-padding;
-  
+
   @include respond-below(lg) {
     justify-content: space-around;
     flex-direction: column;
@@ -47,14 +47,23 @@
 
   .highlight {
     color: $cHighlight;
+    @media (prefers-color-scheme: light) {
+      color: $cHighlightLight;
+    }
   }
 }
 
 .sub-info {
   color: $gray500;
   font-size: 1.3rem;
+  @media (prefers-color-scheme: light) {
+    color: $cSubinfoLight;
+  }
   a {
-    color: $cPrimary;
+    color: $cLink;
+    @media (prefers-color-scheme: light) {
+      color: $cLinkLight;
+    }
   }
 }
 
@@ -64,11 +73,11 @@
   width: 400px;
   border-radius: 1%;
   justify-self: right;
-  
+
   @include respond-below(lg) {
     margin: 0rem auto 2rem;
   }
-  
+
   @include respond-below(md) {
     margin: 2rem auto 2rem;
     width: 400px;
@@ -100,6 +109,6 @@
     left: -100%;
     border-radius: 1%;
     object-fit: cover;
-    z-index: 1;
+    z-index: 10;
   }
 }

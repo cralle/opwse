@@ -13,9 +13,12 @@
   span {
     display: inline-block;
     height: 2px;
-    background: #fff;
+    background: $cPrimary;
     transition: transform 0.45s cubic-bezier(0.45, 0, 0.07, 1);
     will-change: transform;
+    @media (prefers-color-scheme: light) {
+      background: $cPrimaryLight;
+    }
   }
 
   &.open {

@@ -17,6 +17,13 @@
     width: 100%;
     min-height: 12rem;
     background-image: linear-gradient(to bottom, $cFadeFrom 0%, $cFadeTo 50%);
+    @media (prefers-color-scheme: light) {
+      background-image: linear-gradient(
+        to bottom,
+        $cFadeFromLight 0%,
+        $cFadeToLight 50%
+      );
+    }
   }
   @include respond-below(md) {
     min-height: 7rem;
@@ -39,6 +46,9 @@
 
     > div {
       padding: 0 3rem 3rem;
+    }
+    @media (prefers-color-scheme: light) {
+      background: $cFadeToLight;
     }
   }
 

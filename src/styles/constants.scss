@@ -21,7 +21,22 @@ $cLinkActive: $white;
 
 $cPrimary: $white;
 $cHighlight: $green400;
-$cBackground: $gray300;
+$cBackground: #0c0c0c;
+
+// Lightmode
+$cBackgroundLight: #f0f0f0;
+$cPrimaryLight: #0c0c0c;
+// $cHighlightLight: #0101fd;
+$cHighlightLight: #a31515;
+// $cLinkLight: #a31515;
+// $cLinkLight: #0451a5;
+// $cLinkLight: #0101fd;
+$cLinkHoverLight: #0c0c0c;
+$cLinkLight: #5c5c5c;
+$cLinkActiveLight: #0c0c0c;
+$cFadeFromLight: rgba(230, 230, 230, 0);
+$cFadeToLight: rgba(230, 230, 230, 1);
+$cSubinfoLight: #2c2c2c;
 
 // Fonts
 @mixin font-sans-serif {

@@ -24,9 +24,12 @@
   }
   svg {
     transform: rotate(180deg);
-    fill: #fff;
+    fill: $cPrimary;
     width: 100%;
     z-index: 50;
+    @media (prefers-color-scheme: light) {
+      fill: $cPrimaryLight;
+    }
   }
 
   .active {
@@ -47,6 +50,9 @@
     pointer-events: none;
     opacity: 1;
     will-change: transform;
+    @media (prefers-color-scheme: light) {
+      background: rgba(0, 0, 0, 0.05);
+    }
   }
 
   a:hover + .code {

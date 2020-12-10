@@ -2,4 +2,7 @@
 
 .usp {
   color: $cHighlight;
+  @media (prefers-color-scheme: light) {
+    color: $cHighlightLight;
+  }
 }

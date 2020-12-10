@@ -15,6 +15,9 @@
 
   svg {
     fill: $cPrimary;
+    @media (prefers-color-scheme: light) {
+      fill: $cPrimaryLight;
+    }
   }
 
   ul:last-child li {
@@ -30,6 +33,9 @@
         left: -1.1rem;
         top: 50%;
         background: $green500;
+        @media (prefers-color-scheme: light) {
+          background: $cLinkLight;
+        }
         border-radius: 100%;
         content: "";
         display: block;
@@ -45,6 +51,9 @@
       }
       &:hover {
         color: $cLinkHover;
+        @media (prefers-color-scheme: light) {
+          color: $cLinkHoverLight;
+        }
 
         &::before {
           transform: translate(0, -50%);
@@ -84,14 +93,24 @@
     line-height: 1em;
     & .highlight {
       color: $green500;
+      @media (prefers-color-scheme: light) {
+        color: $cLinkLight;
+      }
 
       &:hover::before {
         display: none !important;
       }
     }
-    color: $gray500;
+    color: $cLink;
+    @media (prefers-color-scheme: light) {
+      color: $cLinkLight;
+    }
+
     &:hover {
       color: $cLinkHover;
+      @media (prefers-color-scheme: light) {
+        color: $cLinkHoverLight;
+      }
     }
   }
 }
@@ -99,6 +118,10 @@
 .nav-link {
   &.active {
     color: $cLinkActive;
+
+    @media (prefers-color-scheme: light) {
+      color: $cLinkActiveLight;
+    }
 
     &::before {
       transform: translate(0, -50%);

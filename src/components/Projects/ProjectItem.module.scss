@@ -38,6 +38,9 @@
   color: $cPrimary;
   font-weight: 400;
   margin: 0;
+  @media (prefers-color-scheme: light) {
+    color: $cPrimaryLight;
+  }
 }
 
 .info {
@@ -50,6 +53,9 @@
 .year {
   justify-self: flex-end;
   color: $cPrimary;
+  @media (prefers-color-scheme: light) {
+    color: $cPrimaryLight;
+  }
 
   &::before {
     content: "";
@@ -59,5 +65,8 @@
     width: 1rem;
     background: $green500;
     margin-right: 0.5rem;
+    @media (prefers-color-scheme: light) {
+      background: $cHighlightLight;
+    }
   }
 }

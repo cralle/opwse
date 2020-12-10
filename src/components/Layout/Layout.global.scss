@@ -19,6 +19,11 @@ body {
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media (prefers-color-scheme: light) {
+    background: $cBackgroundLight;
+    color: $cPrimaryLight;
+  }
 }
 
 h1,
@@ -35,9 +40,16 @@ a {
   color: $cLink;
   text-decoration: none;
   transition: color ease-in 0.2s;
+  @media (prefers-color-scheme: light) {
+    color: $cLinkLight;
+  }
 
   &:hover {
     color: $cLinkHover;
+    text-decoration: underline;
+    @media (prefers-color-scheme: light) {
+      color: $cLinkHoverLight;
+    }
   }
 }
 
@@ -53,4 +65,8 @@ a {
 ::selection {
   color: $cHighlight;
   background: transparent;
+  @media (prefers-color-scheme: light) {
+    color: $white;
+    background: #0037da;
+  }
 }
